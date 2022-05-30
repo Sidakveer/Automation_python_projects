@@ -3,6 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 
 service = Service("/Users/sidakveersingh/Desktop/development/chromedriver")
 browser = webdriver.Chrome(service=service)
@@ -13,20 +14,23 @@ sign_in.click()
 
 
 username = browser.find_element(By.ID, "username")
-username.send_keys("Your username")
+username.send_keys("sidakveersingh8@gmail.com")
 
 password = browser.find_element(By.ID, "password")
-password.send_keys("YOUR PASS")
+password.send_keys("!Kartar11")
 
 sign_in1 = browser.find_element(By.XPATH, '//*[@id="organic-div"]/form/div[3]/button')
 sign_in1.click()
 
 time.sleep(2)
 
-jobs = browser.find_elements(By.CSS_SELECTOR, ".job-card-container--clickable")
+jobs = browser.find_elements(By.CSS_SELECTOR, ".job-card-container")
 for x in jobs:
-    x.click()
-    time.sleep(2)
-    save = browser.find_element(By.CSS_SELECTOR, ".jobs-save-button")
-    save.click()
-    time.sleep(2)
+    try:
+        x.click()
+        time.sleep(1)
+        save = browser.find_element(By.CSS_SELECTOR, ".jobs-save-button")
+        save.click()
+    except ElementClickInterceptedException:
+        continue
+
