@@ -14,10 +14,10 @@ sign_in.click()
 
 
 username = browser.find_element(By.ID, "username")
-username.send_keys("sidakveersingh8@gmail.com")
+username.send_keys("xyz@gmail.com")
 
 password = browser.find_element(By.ID, "password")
-password.send_keys("!Kartar11")
+password.send_keys("")
 
 sign_in1 = browser.find_element(By.XPATH, '//*[@id="organic-div"]/form/div[3]/button')
 sign_in1.click()
