@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 import time
 
-service = Service("/Users/sidakveersingh/Desktop/development/chromedriver")
+service = Service("/Users/")
 browser = webdriver.Chrome(service=service)
 browser.get("http://orteil.dashnet.org/experiments/cookie/")
 

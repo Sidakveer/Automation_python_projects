@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-chrome_driver_path = "/Users/sidakveersingh/Desktop/development/chromedriver"
+chrome_driver_path = "/Users//Desktop/development/chromedriver"
 service = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=service)
 

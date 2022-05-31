@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 
-service = Service("/Users/sidakveersingh/Desktop/development/chromedriver")
+service = Service("/Users//Desktop/development/chromedriver")
 browser = webdriver.Chrome(service=service)
 browser.get("https://www.linkedin.com/jobs/search/?f_LF=f_AL&geoId=101330853&keywords=python%20developer&location=Montreal%2C%20Quebec%2C%20Canada")
 
