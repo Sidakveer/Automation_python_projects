@@ -11,4 +11,4 @@ This is an automation project where we build a program that interacts with a web
 This program helps on automating the process of saving job postings on the linkedin website which we later can  apply to from our personalised account.
 
 ## Tweet
-This project works to retrieve our internet speed and then check if the speed of uploading and downloading satify the internet speed promised by our provider and if not it will take the values of our current speed and send a tweet on twiter for our internet provider to see indicating that the speed is slow. The entire process is automated using **selenium**
+This project works to retrieve our internet speed and then check if the speed of uploading and downloading satify the internet speed promised by our provider and if not it will take the values of our current speed and send a tweet on twiter for our internet provider to see indicating that the speed is slow. The entire process is automated using **selenium** 
