@@ -16,7 +16,7 @@ article_list = driver.find_elements(By.CSS_SELECTOR, ".event-widget .shrubbery .
 
 
 dict1 = {}
-final_dict = {}
+final_dict = {} 
 for x in range(len(time_list)):
     dict1["name"] = article_list[x].text
     dict1["time"] = time_list[x].text
