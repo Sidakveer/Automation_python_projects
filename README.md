@@ -12,3 +12,6 @@ This program helps on automating the process of saving job postings on the linke
 
 ## Tweet
 This project works to retrieve our internet speed and then check if the speed of uploading and downloading satify the internet speed promised by our provider and if not it will take the values of our current speed and send a tweet on twiter for our internet provider to see indicating that the speed is slow. The entire process is automated using **selenium** 
+
+## appartment_listing
+we use google forms and zillow's website to look at the appartments listed on san francisco and use **bs4** to scrape the price, address and the link to the specific listing of the website and use the retrieved info to fill out our own google form using **selenium webdriver** to automate this entire process. Finally we can view the listing on a spreadsheet which is provided with google forms on our browser.
